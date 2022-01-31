@@ -11,7 +11,6 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", (req, res) => {
-    console.log(req.body.firstName + " " + req.body.email);
     if (req.body.firstName && req.body.email){
         res.sendFile(__dirname + "/success.html");
     }else{
